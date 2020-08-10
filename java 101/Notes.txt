@@ -1,0 +1,351 @@
+
+
+
+--------------------------------------------------------
+java environment
+--------------------------------------------------------
+
+
+  a. development
+  
+  	 - compiler
+  	 - debugger
+  	 +
+  	 - java APIs
+  	 
+  	 
+  	 ==> JDK 8 and above
+  	 
+  
+  
+  
+  b. deployment
+  
+  	 - JRE ( Java Runtime Environment )
+  	 
+ --------------------------------------------------------
+ 
+ 
+ 
+---------------------------------------------------------
+Java Language Syntax
+---------------------------------------------------------
+
+
+
+1. java project
+-----------------
+
+
+ app1
+ 
+ 	|
+ 	|
+ 	|---- p1  ( .java )
+ 	|
+ 	|
+ 	|
+ 	|---- p2
+ 	|  |
+ 	|  ---  p21 
+ 	|
+
+
+------------------------------------------------------------------------
+
+
+2. java file
+-----------------
+
+ 
+    .java
+    |----------------------------------------------------------------
+    |  
+    | 1. package declaration ( 1 )
+    | 2. import statements   ( n )
+    | 3. public data-type  ( class | interface | enum | annotation ) ( 1 )  ==> must
+    | 4. default/package data-type ( n )
+    |
+    |
+    |----------------------------------------------------------------
+
+
+
+
+------------------------------------------------------------------------
+3. package declaration
+------------------------------------------------------------------------
+
+	
+	why we need ?
+	
+	==> group related java-types (.java files ) into single folder ( package )
+	
+	
+	syntax
+	-------
+	
+	package root-package-name;
+	package root-package-name.sub-package-name;
+	
+	
+	recommended guidelines for package declaration :
+	
+	package company-type.company-name.project-name.module-name;
+	
+	e.g
+	
+	package com.cts.project1.module1;
+	
+
+------------------------------------------------------------------------
+4. import statements	
+------------------------------------------------------------------------
+
+
+   e.g 
+   
+   
+   
+   App1
+   
+   	- p1 
+   		A.java
+   		B.Java
+   		C.Java
+    - p2
+    	D.java
+    	E.java		
+    	
+    	
+   	
+   	A.java
+   	-----------
+   	
+   	
+   		package p1;
+   		
+   		import p2.D;
+   		
+   		public class A{
+   			B b;
+   			D d;
+   		}
+		
+
+	
+	syntax:
+
+	
+	import package.Type;
+	import package.*;
+	
+	import static package.Type.staticVar/Method;
+	
+	
+
+
+
+------------------------------------------------------------------------
+object & class	
+------------------------------------------------------------------------
+
+
+
+  java-language ==> object based language
+
+
+
+what is object ?
+ 
+ 	=> info|data|properties|attributes   : state
+ 	=> function|method|work              : behavior
+ 	=> address|pointer|reference|location: indentity
+ 	
+ 	
+ 	obj ==> sbi
+ 	
+
+what is class ?
+
+    
+    class => {
+    	state 
+    	behav
+    }
+       
+       
+    ==> template/blue-print of similar objects
+    
+  
+    
+    class  ==> instance(s)   
+ 	
+ 	
+
+
+------------------------------------------------------------------------
+object oriented concepts / real-world concepts
+------------------------------------------------------------------------ 	    
+
+
+     - dependent , dependency
+     
+     
+     1. Front-End / Interface / Abstraction
+     
+        why we need?
+        
+         ==> easy to use/learn by dependent-object
+         ==> for loose-coupling with dependency
+         
+         
+     2. back-end / Implementation / Encapsulation  
+     
+     	why we need ?
+     	
+     	==> hide complexity
+     	==> secure many internal features
+         
+         
+     3. Inheritance
+     
+     	why we need ?
+     	
+     	=> re-use common state & behav from generalized-type  to specialized types
+         
+         
+     4. polymorphism ( many forms )
+     
+        why we need ?
+        
+        => object should react in different way on input/envi 
+        
+           
+     
+ 
+------------------------------------------------------------------------
+4. User defined data Types ( class | interface | enum | annotation 	)
+------------------------------------------------------------------------  
+
+
+
+ interface syntax
+ -------------------
+ 
+ 
+ _______ ______ interface Name [extends] Interface1,Interface2 {
+ [public] 
+			   // 1. immutable state
+			   // 2. abstract behavior ==> No impln
+			   
+balance			   // from java-8
+			   // default methods      ==> with impln
+			   // static methods        
+			  
+			  }
+
+
+ class syntax
+ -----------------
+ 
+ 
+ _______     _________  class Name [extends]    Super-Type            {
+ [public]	 [abstract]	           [implements] Interface1,Interface2 
+ [      ]	 [final   ]			                   
+	         [strictfp]		1. mutable/immutable state-definition ==> data variables
+				        	2. constructor(s)
+				        	3. behavior         ==> functions/methods 
+				        	4. inner-types
+------------------------				        	
+[public]	 [static]			        
+[      ]
+[protected]				  }
+[private  ] 
+
+
+
+
+enum syntax
+-----------------
+
+	enum Gender{
+		MALE,FEMALE
+	}
+	enum Days{
+		MONDAY
+	}
+
+
+ 
+annotation syntax
+-----------------
+
+	@interface Annotation{
+		String value();
+	}
+ 
+ 
+ 
+
+------------------------------------------------------------------------
+5. variables  
+------------------------------------------------------------------------  
+
+	
+
+
+______      ________ DataType varName = [ value  | obj ]
+[public]    [static]
+[private]   [final ]
+[protected] [transient]
+[       ]   [volatile]
+
+local-variable
+------------------------
+-Nil-       [final]  
+
+
+
+
+
+
+------------------------------------------------------------------------
+6. methods  
+------------------------------------------------------------------------  
+
+
+
+_____	    ________ ReturnType methodName([params])[throws] CheckedException {
+[public]   	[static]
+[private]	[final ]	  // A/L/R operations
+[protected]	[abstract]	  // conditional statements
+[]	        [synchronized]// looping statements
+	        [strictfp]	  // invoking statements
+	        [native]	
+						[return] [value][object]	
+						
+					}
+
+
+
+
+//-----------------------------------------------------------------------
+
+ Java - Naming Conventions
+
+//-----------------------------------------------------------------------
+
+
+
+keywords => lower-case
+package-names ==> lower-case
+Type Names    ==> pascal-case   ( A____B____C____ )
+var/method names ==> camel-case ( _____B____C_____
+constant variables ==> upper-case
+
+--------------------------------------------------------------------------
+
+
+  	 
+  	 
