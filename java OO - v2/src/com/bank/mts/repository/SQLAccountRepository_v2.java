@@ -9,10 +9,10 @@ import com.bank.mts.model.AccountType;
  *
  */
 
-public class SQLAccountRepository {
+public class SQLAccountRepository_v2 implements SQLAccountRepository {
 
-	public SQLAccountRepository() {
-		System.out.println("SQLAccountRepository instance created..");
+	public SQLAccountRepository_v2() {
+		System.out.println("SQLAccountRepository_v2 instance created..");
 	}
 
 	public Account loadAccount(String number) {

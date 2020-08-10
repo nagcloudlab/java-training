@@ -347,5 +347,27 @@ constant variables ==> upper-case
 --------------------------------------------------------------------------
 
 
+
+
+------------------------------------------------------------------------
+OO principles
+------------------------------------------------------------------------ 	    
+
+
+SOLID principles
+
+
+
+[S]ingle Responsibility Principle
+[O]pen/Closed Principle   i.e open for extension & closed for modification
+[L]iskov Substitution Principle
+[I]nterface Segregation Principle
+[D]ependency Inversion Principle 
+
+-------------------------------------------------------------------------
+
+
+
+
   	 
   	 

@@ -1,0 +1,33 @@
+
+
+
+
+e.g 
+
+  Money Transfer System
+  ---------------------
+  
+  
+  step-1 : define data-model
+  
+  step-2 :
+  
+  		layer(s)
+  		
+  		1. data/repository layer
+  		
+  			- AccountRepository
+  			
+  		2. service/business layer
+  		
+  			- TransferService	
+  			
+ ---------------------------------------- 
+ 
+ 
+ 			
+  
+  
+  			
+  	
+  

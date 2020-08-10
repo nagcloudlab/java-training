@@ -1,7 +1,7 @@
 package com.bank.mts.service;
 
 import com.bank.mts.model.Account;
-import com.bank.mts.repository.SQLAccountRepository_v1;
+import com.bank.mts.repository.SQLAccountRepository;
 
 /**
  * 
@@ -58,8 +58,12 @@ import com.bank.mts.repository.SQLAccountRepository_v1;
  */
 
 public class NEFTTransferService {
+	
+	private SQLAccountRepository  sqlAccountRepository; // reference variable
 
-	public NEFTTransferService() {
+	// dependency injection
+	public NEFTTransferService(SQLAccountRepository sqlAccountRepository) {
+		this.sqlAccountRepository=sqlAccountRepository;
 		System.out.println("NEFTTransferService instance created..");
 	}
 
@@ -67,7 +71,7 @@ public class NEFTTransferService {
 
 		System.out.println("txr initiated..");
 
-		SQLAccountRepository_v1 sqlAccountRepository = new SQLAccountRepository_v1(); //
+//		SQLAccountRepository_v1 sqlAccountRepository = new SQLAccountRepository_v1(); //
 
 		Account fromAccount = sqlAccountRepository.loadAccount(fromAcNum);
 		Account toAccount = sqlAccountRepository.loadAccount(toAccNum);
