@@ -1,32 +1,15 @@
 
 
 
-lambda Syntax
-----------------------
 
-
-	(params) -> {body}
-	(p1)     -> {body}
-	-or-
-	 p1     -> {body}
-	(p1,p1)-> {body}
-	 
-	(p1,p1)-> {single-statement}
-	 -or-
-	(p1,p1)-> single-statement
-	
----------------------------------------------------------------	
 	
 why we need Functional Programming ?
 
 
 	=> to keep code clean & concise	
-	=> behavior parameterization to cope changing requirements
-	
-	
+	=> behavior parameterization to cope with changing requirements
 	=> higher-order-function
-	
-		i.e thru function composition , we can build complex algorithms with simple function
+		i.e compose small function to create complex function
 	
 	
 	

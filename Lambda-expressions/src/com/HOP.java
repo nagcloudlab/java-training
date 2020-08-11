@@ -1,5 +1,6 @@
 package com;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -8,12 +9,19 @@ import java.util.function.Predicate;
 import com.model.Apple;
 import com.model.Color;
 
-public class FunctionComposition_Ex {
+public class HOP {
+
+	// Higher-Order-Function
+	public static Predicate<Integer> hof(Predicate<Integer> f1, Predicate<Integer> f2) {
+		return n -> f1.test(n) && f2.test(n);
+	}
 
 	public static void main(String[] args) {
 
-		List<Apple> inventory = Arrays.asList(new Apple(80, Color.GREEN, "India"), new Apple(155, Color.GREEN, "US"),
-				new Apple(80, Color.RED, "Aus"));
+		List<Apple> inventory = new ArrayList<Apple>();
+		inventory.add(new Apple(80, Color.GREEN, "INDIA"));
+		inventory.add(new Apple(155, Color.GREEN, "US"));
+		inventory.add(new Apple(80, Color.GREEN, "AUS"));
 
 		Comparator<Apple> byWeight = (a1, a2) -> Integer.compare(a1.getWeight(), a2.getWeight());
 		Comparator<Apple> byCountry = (a1, a2) -> a1.getCountry().compareTo(a2.getCountry());
@@ -39,11 +47,6 @@ public class FunctionComposition_Ex {
 		boolean r = and.test(n);
 		System.out.println(r);
 
-	}
-
-	// Higher-Order-Function
-	public static Predicate<Integer> hof(Predicate<Integer> f1, Predicate<Integer> f2) {
-		return n -> f1.test(n) && f2.test(n);
 	}
 
 }

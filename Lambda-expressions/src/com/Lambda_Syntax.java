@@ -2,7 +2,7 @@ package com;
 
 @FunctionalInterface
 interface Comaparator {
-	int compare(String s1, String s2); // SAM
+	int compare(String s1, String s2);
 }
 
 public class Lambda_Syntax {
