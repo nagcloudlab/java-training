@@ -19,11 +19,14 @@ public class App {
 		inventory.add(new Apple(155, Color.GREEN));
 		inventory.add(new Apple(80, Color.GREEN));
 
+		// i. class
 		List<Apple> greenApples = filterApples(inventory, new AppleGreenColorPredicate());
 		List<Apple> heavyApples = filterApples(inventory, new AppleHeavyWeightPredicate());
 		List<Apple> redAndheavyApples = filterApples(inventory, new AppleRedColorAndHeavyPredicate());
 //		
+		
 
+		// ii. anonymous class
 		// #5 Fifth Attempt  ( Anonymous Classes )
 		greenApples = filterApples(inventory, new ApplePredicate() {
 			public boolean test(Apple apple) {
@@ -37,6 +40,7 @@ public class App {
 			}
 		});
 
+		// iii. Lambda
 		// #6 Lambda Expressions / Function ( from Java-8 )
 		greenApples = filterApples(inventory, apple -> apple.getColor().equals(Color.GREEN));
 		heavyApples = filterApples(inventory, apple -> apple.getWeight() > 150);

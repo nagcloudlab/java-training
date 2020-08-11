@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 import com.model.Apple;
@@ -13,7 +14,10 @@ public class HOP {
 
 	// Higher-Order-Function
 	public static Predicate<Integer> hof(Predicate<Integer> f1, Predicate<Integer> f2) {
-		return n -> f1.test(n) && f2.test(n);
+		Predicate<Integer> predicate = n -> {
+			return f1.test(n) && f2.test(n);
+		};
+		return predicate;
 	}
 
 	public static void main(String[] args) {
@@ -46,6 +50,36 @@ public class HOP {
 
 		boolean r = and.test(n);
 		System.out.println(r);
+
+		// ----------------------------------------------------------
+
+		/*
+		 * 
+		 * x=10
+		 * 
+		 * f(x) ==> x+10
+		 * 
+		 * g(x) ==> x*10
+		 * 
+		 * 
+		 * f(g(x))
+		 * 
+		 * 
+		 */
+
+		Function<Integer, Integer> f = x -> x + 10;
+		Function<Integer, Integer> g = x -> x * 10;
+
+//		int v=g.apply(10);
+//		int result=f.apply(v);
+//		System.out.println(result);
+		// or
+		Function<Integer, Integer> fg = f.compose(g); // HOF ==> HOP
+		System.out.println(fg.apply(10));
+
+	}
+
+	public void method(int... args) {
 
 	}
 

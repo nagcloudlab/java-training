@@ -8,8 +8,9 @@ why we need Functional Programming ?
 
 	=> to keep code clean & concise	
 	=> behavior parameterization to cope with changing requirements
+	
 	=> higher-order-function
-		i.e compose small function to create complex function
+		i.e compose multiple small function as one function to build complex algorithms
 	
 	
 	
