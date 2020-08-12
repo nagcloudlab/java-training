@@ -1,0 +1,109 @@
+
+
+
+data structure
+---------------
+
+
+ ==> memory for data to do CRUDSS operations
+ 
+ 
+     types
+     
+      -> primary     ==> single data-element  e.g int ,double ,....
+      -> secondary   ==> multi elements
+      
+      	 - linear   
+      	 
+      	 		- array
+      	 		- linkedlist
+      	 		- stack
+      	 		- queue
+      	 		- hashtable
+      	 
+      	 - non-linear 
+      	 
+      	 		- tree
+      	 		- graph
+      	 
+
+--------------------------------------------------------------------------
+
+	
+collections  
+	
+		==> ready data-structure implementation from java-community
+		==> group of objects
+
+--------------------------------------------------------------------------
+
+Types 
+
+	- List
+	
+	   --> ordered output
+	   --> index based
+	   --> can maintain duplicates
+	
+	- Set
+	
+		--> No index
+		--> Unique data elements
+	
+	- Map
+	
+	    --> to maintain data with user idendity ( key )
+	    
+	    
+	
+--------------------------------------------------------------------------	
+
+
+ collection/data-structure implementation classes
+ 
+ 
+ 
+ 1. List
+ 
+ 
+ 	- ArrayList  => dynamic-array
+ 	- LinkedList => double-linked-list
+ 	- Vector     => dynamic array      ( thread-safe ) 
+ 	- Stack extends Vector  ==> LIFO
+ 	
+ 	
+2. Set
+
+	- TreeSet   => b-tree       ==> natural-order/sort
+	- HashSet   => hash-table   ==> un-ordereed
+	- LinkedHashSet ==> DLL + hash-table ==> ordered output
+	
+	
+	 
+3. Map
+
+	- TreeMap   => b-tree       ==> natural-order/sort
+	- HashMap   => hash-table   ==> un-ordereed
+	- LinkedHashMap => DLL + hash-table ==> ordered output
+	
+	- Hashtable  ==> hash-table ( thread-safe )
+	
+	
+	more...
+	
+	 
+--------------------------------------------------------------------------	
+
+collection type hierarchy	
+
+
+
+
+	top-level    : interfaces
+	bottom-level : implementation
+
+---------------------------------------------------------------------------
+
+
+
+      	 
