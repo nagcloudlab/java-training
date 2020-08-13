@@ -1,11 +1,11 @@
 package com;
 
 class CounterBox {
-	
+
 	long count = 0; // mutable
 
-	public synchronized void increment() {            
-		count = count + 1; // read => increment ==> write 
+	public synchronized void increment() {
+		count = count + 1; // read => increment ==> write
 	}
 
 	public long get() {
