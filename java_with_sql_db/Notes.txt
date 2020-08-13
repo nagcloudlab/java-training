@@ -1,0 +1,75 @@
+
+
+-------------------------------------------------------------------------
+s/w
+
+	-> application  ==> processing logic
+	-> datasource   ==> persisting 
+	
+	
+	    a. file-system
+	    
+	       limitations of file-system
+	       
+	        => data selection/manipulation difficult
+	        => redundant data
+	        => applying data constraints difficult
+	        ...
+	        
+	    b. relational data sources  ( SQL datasources )
+	    
+	       i.e  RDBMS    ( Relational Database Management Systems ) 
+	       
+	            ==> Oracle,MySql,postgresql,DB2 ,....
+	            
+	    c. NoSql datasources
+	    
+	    	a. document       e.g MongoDB,cassandra
+	    	b. key-value      e.g Redis
+	    	...        
+
+
+-------------------------------------------------------------------------	    
+
+
+s/w
+
+
+	- Java-application
+	
+			- object model
+		
+	- MySQL datasource
+	
+	        - relational model
+	
+	
+	
+	ORM  ( Object Relational Mapping )
+	
+	
+	
+	how to implement ORM in java language ?
+	
+	
+	 using 'JDBC' ( Java Database Connectivity ) Api ( java.sql.* )
+	 
+	 
+
+-------------------------------------------------------------------------
+
+basic steps to use JDBC API
+
+-------------------------------------------------------------------------	    
+
+
+step-1 : register 'jdbc-driver'  with jdbc-api
+step-2 : create db-connection with URL,User & password ( tcp/ip connection )
+step-3 : use SQL to communicate with database
+
+		 
+	 
+	     
+	
+        
+	            
