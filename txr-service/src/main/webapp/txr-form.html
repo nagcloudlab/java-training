@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>txr-service</title>
+<link rel="stylesheet" href="css/bootstrap.css"/>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">Transfer service</a>
+	</nav>
+	
+	
+	
+	<div class="container">
+	
+	<hr/>
+	
+	
+	<ul class="nav nav-pills">
+	 <li class="nav-item">
+	    <a class="nav-link" href="/txr-service">Home</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="txr-form.html">Transfer</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" href="#">Statement</a>
+	  </li>
+	</ul>
+	
+	<hr/>
+	
+	
+	<div class="row">
+		<div class="col-4">
+			<div class="card">
+				<div class="card-header">Txr Form</div>
+				<div class="card-body">
+				
+					<form action="txr" method="post">
+						<div class="form-group">
+							<label>FromAccount:</label>
+							<input class="form-control" name="fromAccNum">
+						</div>
+						<div class="form-group">
+							<label>ToAccount:</label>
+							<input class="form-control" name="toAccNum">
+						</div>
+						<div class="form-group">
+							<label>Amount:</label>
+							<input class="form-control" name="amount">
+						</div>
+						<button class="btn btn-dark">Txr</button>
+					 </form>
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	</div>
+
+</body>
+</html>

@@ -36,6 +36,8 @@ public class IMPSTxrService implements TxrService {
 			accountRepository.updateAccount(fromAccount);
 			accountRepository.updateAccount(toAccount);
 
+			return true;
+			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
