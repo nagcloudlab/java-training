@@ -1,0 +1,20 @@
+
+
+
+
+txr-service
+---------------
+
+
+	#1 identify data-model
+	
+	   Account
+	   	- num
+	   	- balance
+	 
+	#2  layer(s)
+	
+		1. data/repository layer  : persisting logic
+		2. service/business layer : processing logic
+		
+		  	
