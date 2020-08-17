@@ -35,6 +35,9 @@ public class TxrServiceImpl implements TxrService {
 
 		accountRepository.save(fromAccount);
 		accountRepository.save(toAccount);
+		
+		
+		// insert txns records to Txn table
 
 		return true;
 

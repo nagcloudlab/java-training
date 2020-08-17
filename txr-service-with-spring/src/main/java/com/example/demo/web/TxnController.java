@@ -19,8 +19,8 @@ public class TxnController {
 
 		List<Txn> txns = new ArrayList<Txn>();
 		if (filter.equals("all")) {
-			txns.add(new Txn(1, 100.00, LocalDateTime.now(), "sample txn1"));
-			txns.add(new Txn(2, 200.00, LocalDateTime.now(), "sample txn2"));
+//			txns.add(new Txn(1, 100.00, LocalDateTime.now(), "sample txn1"));
+//			txns.add(new Txn(2, 200.00, LocalDateTime.now(), "sample txn2"));
 		}
 
 		model.addAttribute("txns", txns); // request scope

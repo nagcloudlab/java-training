@@ -8,6 +8,10 @@ public class Txn {
 	private double amount;
 	private LocalDateTime localDateTime;
 	private String remarks;
+	
+	// account
+	
+	// Type ( credit | debit )
 
 	public Txn(int id, double amount, LocalDateTime localDateTime, String remarks) {
 		super();
